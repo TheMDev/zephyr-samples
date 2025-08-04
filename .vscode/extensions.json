@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "atlassian.atlascode",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "ms-python.black-formatter",
+        "ms-python.debugpy",
+        "ms-python.pylint",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.hexeditor",
+        "ms-vscode.makefile-tools",
+        "ms-vscode.vscode-serial-monitor",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode-remote.remote-containers",
+        "nordic-semiconductor.nrf-connect-extension-pack",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+    ]
+}

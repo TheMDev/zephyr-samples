@@ -1,0 +1,98 @@
+# Common LFS tracks
+
+# Archive Files
+.7z   filter=lfs diff=lfs merge=lfs -text
+.bz2  filter=lfs diff=lfs merge=lfs -text
+.dmg  filter=lfs diff=lfs merge=lfs -text
+.gz   filter=lfs diff=lfs merge=lfs -text
+.img  filter=lfs diff=lfs merge=lfs -text
+.iso  filter=lfs diff=lfs merge=lfs -text
+.lz   filter=lfs diff=lfs merge=lfs -text
+.rar  filter=lfs diff=lfs merge=lfs -text
+.tar  filter=lfs diff=lfs merge=lfs -text
+.tbz2 filter=lfs diff=lfs merge=lfs -text
+.tgz  filter=lfs diff=lfs merge=lfs -text
+.tlz  filter=lfs diff=lfs merge=lfs -text
+.txz  filter=lfs diff=lfs merge=lfs -text
+.xz   filter=lfs diff=lfs merge=lfs -text
+.zip  filter=lfs diff=lfs merge=lfs -text
+.zst  filter=lfs diff=lfs merge=lfs -text
+
+# Audio Files
+*.aa   filter=lfs diff=lfs merge=lfs -text
+*.aac  filter=lfs diff=lfs merge=lfs -text
+*.aax  filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+*.alac filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.m4a  filter=lfs diff=lfs merge=lfs -text
+*.m4b  filter=lfs diff=lfs merge=lfs -text
+*.m4p  filter=lfs diff=lfs merge=lfs -text
+*.mogg filter=lfs diff=lfs merge=lfs -text
+*.mp3  filter=lfs diff=lfs merge=lfs -text
+*.oga  filter=lfs diff=lfs merge=lfs -text
+*.ogg  filter=lfs diff=lfs merge=lfs -text
+*.raw  filter=lfs diff=lfs merge=lfs -text
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.wma  filter=lfs diff=lfs merge=lfs -text
+*.wv   filter=lfs diff=lfs merge=lfs -text
+
+# HDL Files
+*.dat   filter=lfs diff=lfs merge=lfs -text
+*.job   filter=lfs diff=lfs merge=lfs -text
+*.ppd   filter=lfs diff=lfs merge=lfs -text
+*.spi   filter=lfs diff=lfs merge=lfs -text
+*.stapl filter=lfs diff=lfs merge=lfs -text
+*.svf   filter=lfs diff=lfs merge=lfs -text
+
+# Image Files
+*.avif filter=lfs diff=lfs merge=lfs -text
+*.bmp  filter=lfs diff=lfs merge=lfs -text
+*.gif  filter=lfs diff=lfs merge=lfs -text
+*.heif filter=lfs diff=lfs merge=lfs -text
+*.ico  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.tif  filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+
+# Office Files
+*.doc  filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.dot  filter=lfs diff=lfs merge=lfs -text
+*.dotx filter=lfs diff=lfs merge=lfs -text
+*.pdf  filter=lfs diff=lfs merge=lfs -text
+*.pot  filter=lfs diff=lfs merge=lfs -text
+*.potx filter=lfs diff=lfs merge=lfs -text
+*.ppt  filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.vsd  filter=lfs diff=lfs merge=lfs -text
+*.vsdx filter=lfs diff=lfs merge=lfs -text
+*.vst  filter=lfs diff=lfs merge=lfs -text
+*.vstx filter=lfs diff=lfs merge=lfs -text
+*.xls  filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.xlt  filter=lfs diff=lfs merge=lfs -text
+*.xltx filter=lfs diff=lfs merge=lfs -text
+
+# Software Files
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.elf filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.hex filter=lfs diff=lfs merge=lfs -text
+*.lib filter=lfs diff=lfs merge=lfs -text
+
+# Video Files
+*.avi  filter=lfs diff=lfs merge=lfs -text
+*.mov  filter=lfs diff=lfs merge=lfs -text
+*.mp4  filter=lfs diff=lfs merge=lfs -text
+*.mpeg filter=lfs diff=lfs merge=lfs -text
+*.mpg  filter=lfs diff=lfs merge=lfs -text
+*.ogv  filter=lfs diff=lfs merge=lfs -text
+*.qt   filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.wmv  filter=lfs diff=lfs merge=lfs -text
