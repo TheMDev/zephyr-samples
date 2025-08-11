@@ -1,0 +1,6 @@
+{
+    "nrf-connect.applications": [
+        "${workspaceFolder}\\subsys\\fs\\fs_sample",
+        "${workspaceFolder}\\subsys\\logging\\multidomain_appcore"
+    ]
+}

@@ -1,0 +1,50 @@
+# Compiled Files
+*.a
+*.app
+*.bin
+*.d
+*.dep
+*.dll
+*.dylib
+*.elf
+*.exe
+*.gch
+*.hex
+*.la
+*.lai
+*.lib
+*.lo
+*.map
+*.o
+*.obj
+*.out
+*.pch
+*.pyc
+*.sim
+*.slo
+*.so
+
+# Build Files
+*.bak
+*.log
+*.swp
+*.tmp
+**/build*/
+**/out/
+**/temp/
+
+# JetBrains IDE
+.idea/
+
+# Visual Studio Code
+*.code-workspace
+.history/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.vsix
+
+# OS Garbage
+.DS_Store
+desktop.ini
+Thumbs.db

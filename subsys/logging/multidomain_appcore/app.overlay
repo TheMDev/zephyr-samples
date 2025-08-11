@@ -1,0 +1,51 @@
+#include <zephyr/dt-bindings/ipc_service/static_vrings.h>
+
+/ {
+    chosen {
+        // ipc-shm is not required for bt-ipc or log-ipc
+        /delete-property/ zephyr,ipc_shm;
+        zephyr,console = &uart0;
+        zephyr,bt-hci = &bt_hci_ipc0;
+        zephyr,log-ipc = &ipc1;
+    };
+
+    reserved-memory {
+        /delete-node/ memory@20070000;
+
+        sram_ipc0: memory@20070000 {
+            reg = <0x20070000 0xF000>;
+        };
+
+        sram_ipc1: memory@2007F000 {
+            reg = <0x2007F000 0x1000>;
+        };
+    };
+
+    ipc {
+        // Override nrf5340 Default IPC Node
+        /delete-node/ ipc0;
+
+        ipc0: ipc0 {
+            compatible = "zephyr,ipc-openamp-static-vrings";
+            memory-region = <&sram_ipc0>;
+            mboxes = <&mbox 0>, <&mbox 1>;
+            mbox-names = "tx", "rx";
+            role = "host";
+            status = "okay";
+
+            bt_hci_ipc0: bt_hci_ipc0 {
+                compatible = "zephyr,bt-hci-ipc";
+                status = "okay";
+            };
+        };
+
+        ipc1: ipc1 {
+            compatible = "zephyr,ipc-openamp-static-vrings";
+            memory-region = <&sram_ipc1>;
+            mboxes = <&mbox 2>, <&mbox 3>;
+            mbox-names = "tx", "rx";
+            role = "host";
+            status = "okay";
+        };
+    };
+};

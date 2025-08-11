@@ -1,0 +1,35 @@
+/ {
+    chosen {
+        nordic,pm-ext-flash = &mx25r64;
+    };
+    disk_nor: mx25r64 {
+        /*
+         * NOTE: Actual partition placement and size is controlled by the partition manager.
+         * Instead of creating an ignored partition in device tree we can
+         * create this empty phandle to enable the flash-disk driver.
+         *
+         * The sector-size configuration is also not passed to FATFS
+         * and must be set with CONFIG_FS_FATFS_MAX_SS in the prj.conf
+         */
+    };
+    disk_ram: memory@20060000 {
+        compatible = "mmio-sram";
+        reg = <0x20060000 0x00010000>;
+    };
+    msc_disk_nor {
+        status = "okay";
+        compatible = "zephyr,flash-disk";
+        partition = <&disk_nor>;
+        disk-name = "SD";
+        sector-size = <4096>;
+        cache-size = <4096>;
+    };
+    msc_disk_ram {
+        status = "okay";
+        compatible = "zephyr,ram-disk";
+        disk-name = "RAM";
+        sector-size = <512>;
+        sector-count = <128>;
+        ram-region = <&disk_ram>;
+    };
+};

@@ -1,0 +1,40 @@
+disk_nor:
+    affiliation:
+        - disk
+    region: external_flash
+    size: 0x800000
+    address: 0x000000
+    end_address: 0x7FFFFF
+    extra_params: {
+        disk_name: "SD",
+        disk_cache_size: 4096,
+        disk_sector_size: 4096,
+        disk_read_only: 0
+    }
+disk_ram:
+    region: sram_primary
+    size: 0x10000
+    address: 0x20060000
+    end_address: 0x20070000
+    placement:
+        before: [ipc0_sram]
+    extra_params: {
+        disk_name: "RAM",
+        disk_cache_size: 512,
+        disk_sector_size: 512,
+        disk_read_only: 0
+    }
+ipc0_sram:
+    region: sram_primary
+    size: 0xF000
+    address: 0x20070000
+    end_address: 0x2007F000
+    placement:
+        before: [ipc1_sram]
+ipc1_sram:
+    region: sram_primary
+    size: 0x1000
+    address: 0x2007F000
+    end_address: 0x20080000
+    placement:
+        before: [end]
